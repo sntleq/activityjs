@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVITY: JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        function dvd(button) {
+            button.style.webkitAnimation = 'moveX 10s linear 0s infinite, moveY 12s linear 0s infinite';
+            button.style.mozAnimation = 'moveX 10s linear 0s infinite, moveY 12s linear 0s infinite';
+            button.style.oAnimation = 'moveX 10s linear 0s infinite, moveY 12s linear 0s infinite';
+            button.style.animation = 'moveX 10s linear 0s infinite, moveY 12s linear 0s infinite';
+        }
+    </script>
+</head>
+<body>
+    <!-- #1 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+                <h2>SCRIPT #1</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(255, 215, 196);">
+            <p>That welcome prompt was Script #1</p>
+        </div>
+    </section>
+
+    <!-- #2 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+                <h2>SCRIPT #2</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(196, 215, 255)">
+            <button onclick="up(this)">Click Me</button>
+            <script>
+                function up(button) {
+                    let num = parseInt(button.innerText, 10);
+                    if (num) button.innerText = num + 1;
+                    else button.innerText = 1;
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- #3 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+                <h2>SCRIPT #3</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(135, 162, 255); padding-bottom: 0; position: relative;">
+            <button onclick="dvd(this)" style="position: absolute; top: calc(50% - 5rem);">Click Me</button>
+        </div>
+    </section>
+
+    <!-- #4 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+                <h2>SCRIPT #4</h2>
+            </div>
+        </div>
+        <div id="div4" class="content" style="background-color: rgb(255, 215, 196);">
+            <button onclick="changeBG()">Click Me</button>
+        </div>
+    </section>
+
+    <!-- #5 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+                <h2>SCRIPT #5</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(196, 215, 255);">
+            <p>Script #5 sums up two numbers</p>
+            <button onclick="promptSum()">Click Me</button>
+        </div>
+    </section>
+
+    <!-- #6 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+                <h2>SCRIPT #6</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(255, 215, 196);">
+            <p id="text6">This is a paragraph. You'll see.</p>
+            <button onclick="changeText()">Click Me</button>
+        </div>
+    </section>
+
+    <!-- #7 -->
+    <section>
+        <div class="marquee center">
+            <div>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+                <h2>SCRIPT #7</h2>
+            </div>
+        </div>
+        <div class="content" style="background-color: rgb(135, 162, 255);">
+            <p>Script #7 confirms your age</p>
+            <button onclick="confirmAge()">Click Me</button>
+        </div>
+    </section>
+</body>
+</html>
